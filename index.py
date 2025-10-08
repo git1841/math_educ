@@ -294,7 +294,7 @@ HTML_TEMPLATE = '''
 
             <!-- Message de développement -->
             <div class="warning-container">
-                <div class="warning-icon">⚠️</div>
+                <div class="warning-icon"></div>
                 <h2 class="warning-title">Site en cours de développement</h2>
                 <p class="warning-text">
                     Cette plateforme est actuellement en construction.<br>
