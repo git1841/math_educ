@@ -1,6 +1,7 @@
 from flask import Flask, render_template_string, jsonify, request
 import random
 import time
+import os
 
 app = Flask(__name__)
 
@@ -890,4 +891,5 @@ def get_score():
     return jsonify({'score': quiz_manager.user_score})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='localhost', port=5000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(debug=True, host='0.0.0.0', port=port)
