@@ -890,4 +890,4 @@ def get_score():
     return jsonify({'score': quiz_manager.user_score})
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(debug=True, host='localhost', port=5000)
